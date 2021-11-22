@@ -1,0 +1,14 @@
+1. x soni kiritiladi, javob: x ** 3
+
+3. s va h sonlari kiritiladi, javob a = 2*S/h
+
+5. yarim perimetr
+
+8. v, s kiritiladi, natija t = s / v
+
+11. n kiritiladi, natija (n*(n+1)) / 2
+
+13. F = m * a
+
+16. from math import e
+    e ** (y + 2)
