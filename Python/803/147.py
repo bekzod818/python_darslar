@@ -1,0 +1,5 @@
+s = input()
+a = s.count("A")
+b = s.count("Y")
+print(a)
+print(b)
