@@ -4,7 +4,8 @@ menu = ReplyKeyboardMarkup(
     keyboard=[
         [KeyboardButton(text="Foydalanuvchilar")],
         [KeyboardButton(text="Bog'lanish"), KeyboardButton(text="Obuna bo'lish")],
-        [KeyboardButton(text="Qo'shimcha fikrlar"), KeyboardButton(text="Rasmlar")]
+        [KeyboardButton(text="Qo'shimcha fikrlar"), KeyboardButton(text="Rasmlar")],
+        [KeyboardButton(text="Resume")],
     ],
     resize_keyboard=True,
     # one_time_keyboard=True

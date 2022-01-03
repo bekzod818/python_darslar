@@ -43,6 +43,11 @@ async def images(message: types.Message):
     await message.answer_photo(photo=open('/media/bekzod/Hard Disk6/Python Code/python_darslar/Python/bot/translatebot/tgbot.jpg', 'rb'), caption="Telegram BOT")
 
 
+@dp.message_handler(Text(equals=["Resume"]))
+async def images(message: types.Message):
+    await message.answer_document(open('/media/bekzod/Hard Disk7/Python Code/python_darslar/Python/bot/buttons/tgbot.jpg', 'rb'))
+
+
 
 @dp.message_handler(Text(equals=["🔙 Orqaga"]))
 async def back(message: types.Message):

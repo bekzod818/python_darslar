@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Index Page {% endblock %}
+
+{% block content %}
+    <div class="row tm-row">
+        {% for blog in blogs %}
+            <article class="col-12 col-md-6 tm-post">
+                <hr class="tm-hr-primary">
+                <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                    {% if blog.photo %}
+                        <div class="tm-post-link-inner">
+                            <img src="{{ blog.photo.url }}" alt="Image" class="img-fluid">
+                        </div>
+                    {% endif %}
+                    <span class="position-absolute tm-new-badge">New</span>
+                    <h2 class="tm-pt-30 tm-color-primary tm-post-title">{{ blog.title }}</h2>
+                </a>
+                <p class="tm-pt-30">
+                    {{ blog.text|truncatewords:30 }}
+                </p>
+                <div class="d-flex justify-content-between tm-pt-45">
+                    <span class="tm-color-primary"><b>{{ blog.author.username }}</b></span>
+                    <span class="tm-color-primary">{{ blog.created_at }}</span>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+{% endblock %}
